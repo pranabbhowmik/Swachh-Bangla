@@ -2,12 +2,15 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaHome, FaUser, FaBell, FaRegNewspaper } from "react-icons/fa";
 import { Scan } from "lucide-react";
+import logo from "../../assets/logoswac.jpg";
 
 const Navbar = () => {
   return (
     <>
       <div className="w-full h-16  top-0 left-0 z-50 flex items-center justify-between px-4 md:px-8 shadow-lg">
-        Div
+        <NavLink to="/" className="flex items-center">
+          <img src={logo} alt="Logo" className="h-16 w-16 rounded-full" />
+        </NavLink>
       </div>
       <div className="fixed bottom-0 w-full z-50 bg-[#10471d] text-white flex justify-around items-center h-16 rounded-t-2xl md:h-20">
         <NavItem to="/" icon={<FaHome />} />
