@@ -16,7 +16,7 @@ const posters = [poster1, poster2, poster3, poster4, poster5, poster6];
 const PosterSlider = () => {
   return (
     <div className="w-full px-4 py-4">
-      <h2 className="text-xl font-semibold mb-4 text-center md:text-left">
+      <h2 className="text-xl font-semibold mb-4 text-left">
         স্বচ্ছ বাংলা - Clean & Happy Village
       </h2>
       <Swiper
