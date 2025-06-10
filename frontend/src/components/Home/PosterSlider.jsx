@@ -3,7 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import poster1 from "../../assets/poster1.png";
+import poster1 from "../../assets/poster1.jpg";
 import poster2 from "../../assets/poster2.jpg";
 import poster3 from "../../assets/poster3.jpg";
 import poster4 from "../../assets/poster4.jpg";
@@ -42,7 +42,7 @@ const PosterSlider = () => {
             <img
               src={src}
               alt={`Poster ${index + 1}`}
-              className="rounded-xl w-full h-44 object-cover"
+              className="rounded-xl w-full h-48 object-cover"
             />
           </SwiperSlide>
         ))}
