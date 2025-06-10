@@ -7,13 +7,14 @@ import ewast from "../../assets/e-wast.jpg";
 import paper from "../../assets/papper.jpg";
 import glass from "../../assets/glass.jpg";
 import metal from "../../assets/metal.jpg";
-
+import Vegetable from "../../assets/vagetable.jpg";
 const posters = [
   { src: plastic, name: "Plastic" },
   { src: ewast, name: "E-Waste" },
   { src: paper, name: "Paper" },
   { src: glass, name: "Glass" },
   { src: metal, name: "Metal" },
+  { src: Vegetable, name: "Vegetable" },
 ];
 
 const MeteralSlider = () => {
