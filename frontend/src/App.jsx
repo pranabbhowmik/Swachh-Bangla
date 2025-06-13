@@ -6,6 +6,7 @@ import Home from "./page/Home";
 import LoginPage from "./page/LoginPage";
 import Scan from "./page/Scan";
 import Notification from "./page/Notification";
+import Account from "./page/Account";
 function App() {
   const router = createBrowserRouter([
     {
@@ -14,7 +15,7 @@ function App() {
 
       children: [
         { path: "/", element: <Home /> },
-        // { path: "/about", element: <About /> },
+        { path: "/account", element: <Account /> },
         { path: "/scan", element: <Scan /> },
         { path: "/login", element: <LoginPage /> },
         { path: "/notifications", element: <Notification /> },
