@@ -7,6 +7,8 @@ import LoginPage from "./page/LoginPage";
 import Scan from "./page/Scan";
 import Notification from "./page/Notification";
 import Account from "./page/Account";
+import Articles from "./page/Articles";
+import RedeemPage from "./page/Redeem";
 function App() {
   const router = createBrowserRouter([
     {
@@ -19,6 +21,8 @@ function App() {
         { path: "/scan", element: <Scan /> },
         { path: "/login", element: <LoginPage /> },
         { path: "/notifications", element: <Notification /> },
+        { path: "/redeem", element: <RedeemPage /> },
+        { path: "/articles", element: <Articles /> },
         // { path: "/*", element: <NotFound /> },
       ],
     },
