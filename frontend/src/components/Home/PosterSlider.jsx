@@ -42,7 +42,7 @@ const PosterSlider = () => {
             <img
               src={src}
               alt={`Poster ${index + 1}`}
-              className="rounded-xl w-full h-48 object-cover"
+              className="rounded-xl w-full h-48"
             />
           </SwiperSlide>
         ))}

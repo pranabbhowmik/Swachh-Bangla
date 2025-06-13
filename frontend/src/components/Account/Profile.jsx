@@ -2,6 +2,7 @@ import React from "react";
 import UserCard from "../Home/UserCard";
 import { LogOut, Settings, ChevronRight, History, Sprout } from "lucide-react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 // Motion variant for animation
 const containerVariants = {
@@ -18,6 +19,7 @@ const containerVariants = {
 };
 
 function Profile() {
+  const navigate = useNavigate();
   return (
     <div className="space-y-6 px-4 py-6 bg-gray-50">
       <UserCard />
@@ -27,6 +29,7 @@ function Profile() {
         <OptionButton
           icon={<Sprout />}
           label="Redeem Points"
+          onClick={() => navigate("/redeem")}
           index={0}
           bgColor="bg-green-50"
           hoverColor="hover:bg-green-100"
