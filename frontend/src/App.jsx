@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Alllayout from "./components/layout/Alllayout";
 import Home from "./page/Home";
 import LoginPage from "./page/LoginPage";
+import Scan from "./page/Scan";
+import Notification from "./page/Notification";
 function App() {
   const router = createBrowserRouter([
     {
@@ -13,9 +15,9 @@ function App() {
       children: [
         { path: "/", element: <Home /> },
         // { path: "/about", element: <About /> },
-        // { path: "/contact", element: <Contact /> },
+        { path: "/scan", element: <Scan /> },
         { path: "/login", element: <LoginPage /> },
-        // { path: "/signup", element: <Signup /> },
+        { path: "/notifications", element: <Notification /> },
         // { path: "/*", element: <NotFound /> },
       ],
     },
