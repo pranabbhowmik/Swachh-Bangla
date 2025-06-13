@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { Recycle, CloudCog, Leaf, Pencil, SaveAll, User } from "lucide-react";
+import { Recycle, CloudCog, Pencil, SaveAll, User, Sprout } from "lucide-react";
 import { gsap } from "gsap";
 import CountUp from "react-countup";
 
@@ -126,10 +126,10 @@ const UserCard = () => {
           <h3 className="text-lg font-semibold text-white mt-1">
             <CountUp end={stats.carbon} decimals={1} duration={3} /> g
           </h3>
-          <p className="text-xs text-gray-300">Carbon</p>
+          <p className="text-xs text-gray-300">Plastic</p>
         </div>
         <div className="bg-black/90 rounded-2xl py-4 px-2">
-          <Leaf className="mx-auto text-white w-5 h-5" />
+          <Sprout className="mx-auto text-white w-5 h-5" />
           <h3 className="text-lg font-semibold text-white mt-1">
             <CountUp end={stats.points} duration={2} />
           </h3>
