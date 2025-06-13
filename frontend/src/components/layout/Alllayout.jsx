@@ -12,7 +12,7 @@ function Alllayout() {
   // Check if the current path matches or starts with the hidden paths
   const shouldHideFooter =
     hiddenFooterPaths.some((path) => location.pathname.startsWith(path)) ||
-    location.pathname.startsWith("/order-details");
+    location.pathname.startsWith("/order-details","/account");
   return (
     <>
       <Navbar />
