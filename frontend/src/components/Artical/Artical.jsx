@@ -1,5 +1,6 @@
 import React from "react";
 import { Tag } from "lucide-react"; // Using lucide icons, you can swap this with others
+import { NavLink } from "react-router-dom";
 
 const ArticleCard = ({ article }) => {
   return (
@@ -16,10 +17,13 @@ const ArticleCard = ({ article }) => {
 
         <p className="text-sm text-black mb-3">
           {article.paragraph.split(" ").slice(0, 30).join(" ")}...
-          <span className="text-[#8941F2] hover:underline cursor-pointer">
+          <NavLink
+            to={article.link}
+            className="text-[#8941F2] hover:underline  cursor-pointer"
+          >
             {" "}
             আরও পড়ুন
-          </span>
+          </NavLink>
         </p>
 
         {/* Tags */}

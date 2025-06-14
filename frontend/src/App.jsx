@@ -10,6 +10,7 @@ import Account from "./page/Account";
 import Articles from "./page/Articles";
 import RedeemPage from "./page/Redeem";
 import TransactionHistory from "./page/TransactionHistory";
+import FirstArtical from "./page/FirstArtical";
 function App() {
   const router = createBrowserRouter([
     {
@@ -24,6 +25,7 @@ function App() {
         { path: "/notifications", element: <Notification /> },
         { path: "/transaction-history", element: <TransactionHistory /> },
         { path: "/redeem", element: <RedeemPage /> },
+        { path: "/first-artical", element: <FirstArtical /> },
         { path: "/articles", element: <Articles /> },
         // { path: "/*", element: <NotFound /> },
       ],
