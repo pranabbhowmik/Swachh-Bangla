@@ -21,7 +21,7 @@ const containerVariants = {
 function Profile() {
   const navigate = useNavigate();
   return (
-    <div className="space-y-6 px-4 py-6 bg-gray-50">
+    <div className="space-y-6 max-h-screen px-4 py-6 bg-gray-50">
       <UserCard />
 
       {/* Options List */}
