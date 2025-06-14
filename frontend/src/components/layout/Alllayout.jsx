@@ -7,12 +7,16 @@ function Alllayout() {
   const location = useLocation();
 
   // Pages where the footer should be hidden
-  const hiddenFooterPaths = ["/notifications"];
+  const hiddenFooterPaths = [
+    "/notifications",
+    "/account",
+    "/transaction-history",
+  ];
 
   // Check if the current path matches or starts with the hidden paths
-  const shouldHideFooter =
-    hiddenFooterPaths.some((path) => location.pathname.startsWith(path)) ||
-    location.pathname.startsWith("/order-details","/account");
+  const shouldHideFooter = hiddenFooterPaths.some((path) =>
+    location.pathname.startsWith(path)
+  );
   return (
     <>
       <Navbar />

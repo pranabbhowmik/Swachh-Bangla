@@ -37,6 +37,7 @@ function Profile() {
         <OptionButton
           icon={<History />}
           label="Transaction History"
+          onClick={() => navigate("/transaction-history")}
           index={1}
           bgColor="bg-yellow-50"
           hoverColor="hover:bg-yellow-100"
