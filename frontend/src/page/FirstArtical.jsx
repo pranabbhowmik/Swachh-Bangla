@@ -40,7 +40,7 @@ function FirstArtical() {
       </h2>
       <ul className="space-y-3">
         <li className="flex items-start gap-2">
-          <CheckCircle className="text-green-500 w-5 h-5 mt-1" />
+          <CheckCircle className="text-green-500 w-3 h-3 mt-1 shrink-0" />
           <span>
             <strong>রোগ প্রতিরোধ:</strong> খোলা জায়গায় মল ত্যাগের ফলে ছড়িয়ে
             পড়া রোগ যেমন ডায়রিয়া, আমাশয় ও চর্মরোগ প্রতিরোধ করা যায়।
