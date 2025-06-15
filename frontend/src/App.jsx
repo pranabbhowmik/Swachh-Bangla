@@ -11,6 +11,8 @@ import Articles from "./page/Articles";
 import RedeemPage from "./page/Redeem";
 import TransactionHistory from "./page/TransactionHistory";
 import FirstArtical from "./page/FirstArtical";
+import SecArtical from "./page/SecArtical";
+import ArticleDetailsPage from "./page/WasteSeparationArticle";
 function App() {
   const router = createBrowserRouter([
     {
@@ -27,6 +29,8 @@ function App() {
         { path: "/redeem", element: <RedeemPage /> },
         { path: "/first-artical", element: <FirstArtical /> },
         { path: "/articles", element: <Articles /> },
+        { path: "/sec-artical", element: <SecArtical /> },
+        { path: "/third-artical", element: <ArticleDetailsPage /> },
         // { path: "/*", element: <NotFound /> },
       ],
     },
